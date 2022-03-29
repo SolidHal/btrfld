@@ -22,9 +22,6 @@ TODO:
 - pick out usb-c extension
 - choose place for usb-c extension port on left side
 - choose place for power switch by usb-c port, make it recessed
-- slot in thumb cluster extension for ribbon cable
-  - make this retain the ribbon cable?
-  - 6 of the ribbon cable wires is 7.6mm
 - ribbon cable retainers on baseplate
 
 nice to haves
