@@ -24,7 +24,6 @@ TODO:
 - choose place for power switch by usb-c port, make it recessed
 - make the body support have a slight pocket to fit the underside of keyswitches
 - wiring slots on body/thumb cluster
-  - pick out wire diameter
 - slot in thumb cluster extension for ribbon cable
   - make this retain the ribbon cable?
   - 6 of the ribbon cable wires is 7.6mm
