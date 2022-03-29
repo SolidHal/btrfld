@@ -11,6 +11,11 @@ Controller Location
  - center of left side of baseplate
  - along with battery
  - wires from right side route to left side
+ 
+ 
+Body/ThumbCluster Pivot Rob
+  - BodyThumbRod Cap gets glued on body end of rod
+  - thumb cluster end of rod gets glued in place
 
 TODO: 
 
@@ -23,7 +28,6 @@ TODO:
 - slot in thumb cluster extension for ribbon cable
   - make this retain the ribbon cable?
   - 6 of the ribbon cable wires is 7.6mm
-- retainer for body/thumb cluster rod
 - ribbon cable retainers on baseplate
 
 nice to haves
