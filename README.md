@@ -33,8 +33,8 @@ Body/ThumbCluster Pivot Rob
 Retain wire in thumb cluster with 2 dots of super glue
 
 TODO: 
-- choose place for usb-c extension port on left side
 - choose place for power switch by usb-c port, make it recessed
+- choose place for controller
 - ribbon cable retainers on baseplate
 
 nice to haves
