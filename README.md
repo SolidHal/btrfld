@@ -51,3 +51,7 @@ Attach trackpoint/ball or touchpad somewhere?
 
 X : 61.38 mm
 ΔY : 36.15 mm
+
+
+Print Tips:
+Enforce/paint on supports for > 90 degrees
