@@ -33,8 +33,8 @@ Body/ThumbCluster Pivot Rob
 Retain wire in thumb cluster with 2 dots of super glue
 
 TODO: 
+- redo wiring for bluemicro & to make wiring easier with controller position
 - choose place for power switch by usb-c port, make it recessed
-- choose place for controller
 - ribbon cable retainers on baseplate
 
 nice to haves
