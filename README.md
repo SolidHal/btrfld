@@ -70,3 +70,15 @@ Body wire:
 
 Future: 
 Attach trackpoint/ball or touchpad somewhere?
+
+
+Friction fit redesign notes:
+https://markforged.com/resources/blog/joinery-onyx
+https://www.hubs.com/knowledge-base/how-design-snap-fit-joints-3d-printing/
+
+
+firmware:
+https://zmk.dev/docs/development/new-shield
+https://zmk.dev/docs/development/setup/
+https://zmk.dev/docs/troubleshooting
+https://github.com/SolidHal/zmk
