@@ -82,3 +82,17 @@ https://zmk.dev/docs/development/new-shield
 https://zmk.dev/docs/development/setup/
 https://zmk.dev/docs/troubleshooting
 https://github.com/SolidHal/zmk
+
+
+## Build ZMK
+```
+cd zmk
+source zephyr/zephyr-env.sh
+cd app
+west build -b bluemicro840_v1 -- -DSHIELD=btrfld
+```
+
+make pristine
+```
+west build -p -b bluemicro840_v1 -- -DSHIELD=btrfld
+```
