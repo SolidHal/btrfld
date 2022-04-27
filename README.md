@@ -36,6 +36,10 @@ More images available in "FinishedPictures" folder
 - diodes
 
 - 3mm diameter steel rod
+  - 2x 70.5mm
+  - 2x 64.7mm
+  - 2x 22.7 mm
+  - 4x 14.2
 
 - 1.27mm flat ribbon cable
 
@@ -128,6 +132,7 @@ west build -p -b bluemicro840_v1 -- -DSHIELD=btrfld
 
 
 ## Future development
+- Implement PCB solution, hand wiring this sucks
 - Attach trackpoint/ball or touchpad somewhere?
 - latch to keep folded?
 - latches to retain body/thumb extensions in base?
