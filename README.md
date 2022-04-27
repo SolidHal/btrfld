@@ -1,32 +1,75 @@
-parts:
+# Btrfld
 
-USB C breakout basic breakout board 
-Used this one https://www.amazon.com/Type-C-Breakout-Serial-Connector-Converter/dp/B09KC1SMGD/
-wiring:
+Pronounced "butter-fold"
+A foldable, portable sibling of the btrfly keyboard https://github.com/SolidHal/btrfly-keyboard
+
+More images available in "FinishedPictures" folder
+
+![render_gif](demos/final_draft.gif)
+
+![assembled](FinishedPictures/btrfld_front_angle.jpeg)
+
+![brothers](FinishedPictures/btrfld_with_btrfly/btrfld_btrfly_top.jpeg)
+
+## Features
+- 5 key dactyl-manuform-mini thumb cluster
+- flat, tented qwerty keys
+- 6 extra mappable keys
+- bluetooth (optional)
+- folds flat for portability
+
+## Parts:
+
+- USB C breakout basic breakout board 
+  - Used this one https://www.amazon.com/Type-C-Breakout-Serial-Connector-Converter/dp/B09KC1SMGD/
+  - wiring:
+  ```
+  For most usages, you can just connect VBUS to your 5V input, GND to ground, and D+ and D- as you expect. You can monitor the CC and SBU pins to determine cable polarity, or send side-band data. Or leave them disconnected
+  ```
+
+- A USB 2.0 USB C cable to cut up
+  - USB C to Micro usb can be gotten pretty cheap
+
+- choc v1 keyswitches
+
+- diodes
+
+- 3mm diameter steel rod
+
+- 1.27mm flat ribbon cable
+
+- 1x bluemicro840
+  - if you don't want bluetooth, you can just use a promicro instead
+  
+- 3d printed pieces, located in the STLs folder
+
+## Modifying
+Edit `test_fit.FCStd` using FreeCad, I used version `0.19-24366`
+I am by no means a FreeCad expert, so I'm sure its built suboptimally. 
+
+## Print Settings:
 ```
-For most usages, you can just connect VBUS to your 5V input, GND to ground, and D+ and D- as you expect. You can monitor the CC and SBU pins to determine cable polarity, or send side-band data. Or leave them disconnected
+Supports on buildplate
+Detect Bridging
+100% infill
+0.20mm
+PLA/PETG
 ```
-
-A USB 2.0 USB C cable to cut up
-USB C to Micro usb can be gotten pretty cheap
-
-choc v1 keyswitches
-
-diodes
-
 
 ## Assembly Tips:
 
-Must trim a very very slight amount off of the center pin on keyswitches over the body/thumbcluster rod
+- Must trim a very very slight amount off of the center pin on keyswitches over the body/thumbcluster rod
+  - switch above this must be rotated to give clearance for the rod locker
 
-Body/ThumbCluster Pivot Rob
+- Body/ThumbCluster Pivot Rob
   - BodyThumbRod Cap gets glued on body end of rod
   - thumb cluster end of rod gets glued in place
   
-Retain wire in thumb cluster with 2 dots of super glue
+- Area around the body/baseplate hinge needs clearence, so keep all wires to the other side of the keyswitch
 
-Area around the body/baseplate hinge needs clearence, so keep all wires to the other side of the keyswitch
+- Reference the images in the "BuildPictures" folder
 
+## Wiring
 
 ### Wire lengths:
 
@@ -37,54 +80,34 @@ Area around the body/baseplate hinge needs clearence, so keep all wires to the o
 #### Thumb -> Baseplate
 6 wires
 240mm
-70mm threaded through
+70mm threaded through on the thumb side
+
+Reference WiringGuide.png
 
 
+## Flash ZMK Firmware
 
-TODO: 
-- redo wiring for bluemicro & to make wiring easier with controller position
-- choose place for power switch by usb-c port, make it recessed
+Prebuilt firmware available in the `Firmware` directory
+Bridge ground + reset twice quickly to put the bluemicro840 into flashing mode
 
-nice to haves
-- latch to keep folded?
-- latches to retain body/thumb extensions in base?
+*As the handwiring of this keyboard is pretty tricky, this firmware likely won't work properly with another build of the btrfly*
 
 
-Animation:
-BaseBodyAngle goes from 0 -> 32
+## Build ZMK Firmware
 
+### Github Actions Build
 
-Print Settings:
-Supports on buildplate
-Detect Bridging
-100% infill
-0.20mm
-PLA/PETG
+fork this repo, modify the files to your hearts content
+the github actions workflow will then build it for you
+https://github.com/SolidHal/zmk-config-btrfld
 
+### Local build
 
+Grab my fork of the zmk firmware
+```
+git clone https://github.com/SolidHal/zmk.git
+```
 
-Body wire:
-9 wires, 300mm
-- 180mm should be put into the wire managers
-- 120 should be free
-
-Future: 
-Attach trackpoint/ball or touchpad somewhere?
-
-
-Friction fit redesign notes:
-https://markforged.com/resources/blog/joinery-onyx
-https://www.hubs.com/knowledge-base/how-design-snap-fit-joints-3d-printing/
-
-
-firmware:
-https://zmk.dev/docs/development/new-shield
-https://zmk.dev/docs/development/setup/
-https://zmk.dev/docs/troubleshooting
-https://github.com/SolidHal/zmk
-
-
-## Build ZMK
 ```
 cd zmk
 source zephyr/zephyr-env.sh
@@ -96,3 +119,25 @@ make pristine
 ```
 west build -p -b bluemicro840_v1 -- -DSHIELD=btrfld
 ```
+
+
+## Future development
+- Attach trackpoint/ball or touchpad somewhere?
+- latch to keep folded?
+- latches to retain body/thumb extensions in base?
+
+
+## References
+
+Animation:
+BaseBodyAngle goes from 0 -> 32
+
+firmware:
+https://zmk.dev/docs/development/new-shield
+https://zmk.dev/docs/development/setup/
+https://zmk.dev/docs/troubleshooting
+https://github.com/SolidHal/zmk
+
+Friction fit redesign notes:
+https://markforged.com/resources/blog/joinery-onyx
+https://www.hubs.com/knowledge-base/how-design-snap-fit-joints-3d-printing/
