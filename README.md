@@ -10,6 +10,8 @@ More images available in "FinishedPictures" folder
 
 ![assembled](FinishedPictures/btrfld_front_angle.jpeg)
 
+![folded](FinishedPictures/btrfld_folded.jpeg)
+
 ![brothers](FinishedPictures/btrfld_with_btrfly/btrfld_btrfly_top.jpeg)
 
 ## Features
