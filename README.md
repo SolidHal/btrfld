@@ -1,6 +1,7 @@
 # Btrfld
 
 Pronounced "butter-fold"
+
 A foldable, portable sibling of the btrfly keyboard https://github.com/SolidHal/btrfly-keyboard
 
 More images available in "FinishedPictures" folder
@@ -82,7 +83,12 @@ PLA/PETG
 240mm
 70mm threaded through on the thumb side
 
-Reference WiringGuide.png
+- Wiring the underside of the right/left body halves is very tedious
+  - Make sure everything stays as flat as possible
+
+- Reference the images in "BuildPictures" and "FinishedPictures" for hints on how to layout the wires
+
+- Reference WiringGuide.png to see see the row/colomn layout
 
 
 ## Flash ZMK Firmware
