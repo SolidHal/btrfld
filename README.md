@@ -1,3 +1,7 @@
+# WIP
+
+4x6 mod of Btrfld
+![assembled](4x6.png)
 # Btrfld
 
 Pronounced "butter-fold"
