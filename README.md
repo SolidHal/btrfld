@@ -101,8 +101,13 @@ PLA/PETG
 
 Prebuilt firmware available in the `Firmware` directory
 Bridge ground + reset twice quickly to put the bluemicro840 into flashing mode
+Or press the "bootloader" key
+then copy the firmware onto the keyboard
+```
+cp build/zephyr/zmk.uf2 /media/solidhal/NRF52BOOT/CURRENT.UF2
+```
 
-*As the handwiring of this keyboard is pretty tricky, this firmware likely won't work properly with another build of the btrfly*
+*As the handwiring of this keyboard is pretty tricky, this firmware likely won't work properly with another build of the btrfly. You will need to adjust it to match your wiring choices*
 
 
 ## Build ZMK Firmware
@@ -132,6 +137,7 @@ make pristine
 west build -p -b bluemicro840_v1 -- -DSHIELD=btrfld
 ```
 
+### 
 
 ## Future development
 - Implement PCB solution, hand wiring this sucks
