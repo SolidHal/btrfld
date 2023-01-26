@@ -160,3 +160,27 @@ https://github.com/SolidHal/zmk
 Friction fit redesign notes:
 https://markforged.com/resources/blog/joinery-onyx
 https://www.hubs.com/knowledge-base/how-design-snap-fit-joints-3d-printing/
+
+
+## PCB design notes
+
+row 0 has 5 keys
+row 3 has 3 keys
+col 0 has 3 keys
+col 4 has 4 keys
+
+9 pin wire header pinout
+0 - row 0
+1 - row 1
+2 - row 2
+3 - row 3
+4 - col 0
+5 - col 1
+6 - col 2
+7 - col 3
+8 - col 4
+
+- 3d print hand parts
+- order diodes, choc switches, controllers(?)
+- design pcbs for thumbs
+- design pcb for centerboard/controller
