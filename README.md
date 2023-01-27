@@ -33,9 +33,9 @@ More images available in "FinishedPictures" folder
 - A USB 2.0 USB C cable to cut up
   - USB C to Micro usb can be gotten pretty cheap
 
-- choc v1 keyswitches
+- 46 choc v1 keyswitches, keycaps
 
-- diodes
+- 1N4148W SOD-323F diodes
 
 - 3mm diameter steel rod
   - 2x 70.5mm
@@ -47,7 +47,7 @@ More images available in "FinishedPictures" folder
 
 - 1x bluemicro840
   - if you don't want bluetooth, you can just use a promicro instead
-  
+
 - 3d printed pieces, located in the STLs folder
 
 ## Modifying
@@ -181,6 +181,4 @@ col 4 has 4 keys
 8 - col 4
 
 - 3d print hand parts
-- order diodes, choc switches, controllers(?)
 - design pcbs for thumbs
-- design pcb for centerboard/controller

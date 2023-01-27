@@ -1,4 +1,4 @@
-20117053221264487
+20118728004572480
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -78595,6 +78595,13 @@ rotary encoder
 0
 5
 4
+SW_KEYBOARD
+ProMicro
+Pro Micro footprint
+promicro ProMicro
+0
+24
+24
 SW_KEYBOARD
 SW_PG1350_reversible
 Kailh "Choc" PG1350 keyswitch, able to be mounted on front or back of PCB
