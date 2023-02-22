@@ -6,7 +6,7 @@ A foldable, portable sibling of the btrfly keyboard https://github.com/SolidHal/
 
 More images available in "FinishedPictures" folder
 
-![render_gif](demos/final_draft.gif)
+![render_gif](demos/pcb_folding.gif)
 
 ![assembled](FinishedPictures/pcb_handwired_top.jpg)
 
