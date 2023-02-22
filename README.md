@@ -8,11 +8,11 @@ More images available in "FinishedPictures" folder
 
 ![render_gif](demos/final_draft.gif)
 
-![assembled](FinishedPictures/btrfld_front_angle.jpeg)
+![assembled](FinishedPictures/pcb_handwired_top.jpg)
 
-![folded](FinishedPictures/btrfld_folded.jpeg)
+![folded](FinishedPictures/pcb_handwired_folded_top.jpg)
 
-![brothers](FinishedPictures/btrfld_with_btrfly/btrfld_btrfly_top.jpeg)
+![siblings](FinishedPictures/btrfld_with_btrfly/pcb_handwired_btrfly_front.jpg)
 
 ## Features
 - 5 key dactyl-manuform-mini thumb cluster
@@ -21,11 +21,23 @@ More images available in "FinishedPictures" folder
 - bluetooth (optional)
 - folds flat for portability
 
+## PCBs
+
+![pcbs](BuildPictures/PCB/pcbs.jpeg)
+
+- located in `btrfld_pcb`
+- the hand and thumb pcbs are mirrored so they can be used for either hand
+- 2 x btrfld_pcb
+- 1 x btrfld_pcb_center
+- 2 x btrfld_pcb_thumb
+
 ## Parts:
 
-- USB C breakout basic breakout board 
+- PCBs
+
+- USB C breakout basic breakout board
   - Used this one https://www.amazon.com/Type-C-Breakout-Serial-Connector-Converter/dp/B09KC1SMGD/
-  - wiring:
+  - wiring the usb:
   ```
   For most usages, you can just connect VBUS to your 5V input, GND to ground, and D+ and D- as you expect. You can monitor the CC and SBU pins to determine cable polarity, or send side-band data. Or leave them disconnected
   ```
@@ -36,6 +48,7 @@ More images available in "FinishedPictures" folder
 - 46 choc v1 keyswitches, keycaps
 
 - 1N4148W SOD-323F diodes
+  - Tips for soldering these can be found in the assembly notes section below
 
 - 3mm diameter steel rod
   - 2x 70.5mm
@@ -44,15 +57,14 @@ More images available in "FinishedPictures" folder
   - 4x 14.2
 
 - 1.27mm flat ribbon cable
+  - 2 x 9 wire cables: 13 cm
+  - 2 x 6 wire cables: 9.6 cm
 
 - 1x bluemicro840
   - if you don't want bluetooth, you can just use a promicro instead
 
 - 3d printed pieces, located in the STLs folder
-
-## Modifying
-Edit `test_fit.FCStd` using FreeCad, I used version `0.19-24366`
-I am by no means a FreeCad expert, so I'm sure its built suboptimally. 
+  - 1 copy of everything besides test_fit-UnderbodyWireGuides.stl, which we need 4 of
 
 ## Print Settings:
 ```
@@ -63,57 +75,41 @@ Detect Bridging
 PLA/PETG
 ```
 
-## Assembly Tips:
+## Assembly Tips
+this process is much less tedious than hand wiring. But its still annoying in places since we are trying to keep things thin.
+- solder the parallel wires to the hands/thumb clusters *before* placing the boards in the frame and soldering switches
+- stripping ribbon cable:
+  - take an xacto knife ~3mm from the end of the cable and cut a slit until you see wire, then use your fingernail to peel the cut off section away from the rest of the cable
+- use cut off diode/resistor legs to connect the controller to the center pcb
+- trim the stabs on the hinge side keys of the left/right hand bodies (switches for Q,A,Z, P, ;, / keys)
+- the pcbs are designed to hold the diodes "upside down" to keep things as thin as possible. Soldering these is a little hard since they like to stick to the soldering iron.
+  - get some fine point electronics tweezers
+  - put a very very small amount of solder on one of the diode pads
+  - place the diode, the "legs" should keep the diode from completely falling into the hole
+  - hold the diode down with the tweezers, and use your iron to reflow the solder. This should hold the diode down enough for you to solder the other diode leg.
+  - finally, add some more solder to the first pad
+- The UnderbodyWireGuides get super glued into the holes of the pcb. See pictures of the hand underside for details.
+- Once you have tested the board, use some superglue to reinforce the ribbon cable solder joints
 
-- Must trim a very very slight amount off of the center pin on keyswitches over the body/thumbcluster rod
-  - switch above this must be rotated to give clearance for the rod locker
-
-- Body/ThumbCluster Pivot Rob
-  - BodyThumbRod Cap gets glued on body end of rod
-  - thumb cluster end of rod gets glued in place
-  
-- Area around the body/baseplate hinge needs clearence, so keep all wires to the other side of the keyswitch
-
-- Reference the images in the "BuildPictures" folder
-
-## Wiring
-
-### Wire lengths:
-
-#### Body -> Baseplate
-9 wires
-420mm
-
-#### Thumb -> Baseplate
-6 wires
-240mm
-70mm threaded through on the thumb side
-
-- Wiring the underside of the right/left body halves is very tedious
-  - Make sure everything stays as flat as possible
-
-- Reference the images in "BuildPictures" and "FinishedPictures" for hints on how to layout the wires
-
-- Reference WiringGuide.png to see see the row/colomn layout
+- Reference the images in the "BuildPictures/PCB" folder
 
 
 ## Flash ZMK Firmware
 
 Prebuilt firmware available in the `Firmware` directory
 Bridge ground + reset twice quickly to put the bluemicro840 into flashing mode
-Or press the "bootloader" key
+Or press the "bootloader" key on the keyboard if you have already flashed the firmware before
 then copy the firmware onto the keyboard
 ```
-cp build/zephyr/zmk.uf2 /media/solidhal/NRF52BOOT/CURRENT.UF2
+cp build/zephyr/zmk.uf2 /media/<user>/NRF52BOOT/CURRENT.UF2
 ```
-
-*As the handwiring of this keyboard is pretty tricky, this firmware likely won't work properly with another build of the btrfly. You will need to adjust it to match your wiring choices*
 
 
 ## Build ZMK Firmware
 
 ### Github Actions Build
 
+_This is broken until https://github.com/zmkfirmware/zmk/pull/1499 merges, do a local build instead_
 fork this repo, modify the files to your hearts content
 the github actions workflow will then build it for you
 https://github.com/SolidHal/zmk-config-btrfld
@@ -125,9 +121,10 @@ Grab my fork of the zmk firmware
 git clone https://github.com/SolidHal/zmk.git
 ```
 
+follow https://zmk.dev/docs/development/setup
+then
 ```
 cd zmk
-source zephyr/zephyr-env.sh
 cd app
 west build -b bluemicro840_v1 -- -DSHIELD=btrfld
 ```
@@ -137,14 +134,49 @@ make pristine
 west build -p -b bluemicro840_v1 -- -DSHIELD=btrfld
 ```
 
-### 
-
 ## Future development
-- Implement PCB solution, hand wiring this sucks
 - Attach trackpoint/ball or touchpad somewhere?
 - latch to keep folded?
 - latches to retain body/thumb extensions in base?
 
+
+## Modifying
+Edit `test_fit.FCStd` using FreeCad, I used version `0.19-24366`
+I am by no means a FreeCad expert, so I'm sure it is built suboptimally.
+The pcbs were created in kicad
+
+## Hand Wiring Assembly Tips
+
+### Don't hand wire this thing unless you have lots and lots of time to waste. Use the PCBs instead.
+
+- Wiring the underside of the right/left body halves is very tedious
+  - Make sure everything stays as flat as possible
+
+- Reference the images in "BuildPictures" and "FinishedPictures" for hints on how to layout the wires
+
+- Reference WiringGuide.png to see see the row/colomn layout
+
+- Must trim a very very slight amount off of the center pin on keyswitches over the body/thumbcluster rod
+  - switch above this must be rotated to give clearance for the rod locker
+
+- Body/ThumbCluster Pivot Rob
+  - BodyThumbRod Cap gets glued on body end of rod
+  - thumb cluster end of rod gets glued in place
+
+- Area around the body/baseplate hinge needs clearence, so keep all wires to the other side of the keyswitch
+
+- Reference the images in the "BuildPictures" folder
+
+### Hand Wiring Wire lengths:
+
+#### Body -> Baseplate
+9 wires
+420mm
+
+#### Thumb -> Baseplate
+6 wires
+240mm
+70mm threaded through on the thumb side
 
 ## References
 
@@ -162,23 +194,3 @@ https://markforged.com/resources/blog/joinery-onyx
 https://www.hubs.com/knowledge-base/how-design-snap-fit-joints-3d-printing/
 
 
-## PCB design notes
-
-row 0 has 5 keys
-row 3 has 3 keys
-col 0 has 3 keys
-col 4 has 4 keys
-
-9 pin wire header pinout
-0 - row 0
-1 - row 1
-2 - row 2
-3 - row 3
-4 - col 0
-5 - col 1
-6 - col 2
-7 - col 3
-8 - col 4
-
-- 3d print hand parts
-- design pcbs for thumbs
