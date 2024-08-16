@@ -278,7 +278,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "btrfld_pcb.step",
       "svg": "",
       "vrml": ""
     },
