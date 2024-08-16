@@ -194,3 +194,14 @@ https://markforged.com/resources/blog/joinery-onyx
 https://www.hubs.com/knowledge-base/how-design-snap-fit-joints-3d-printing/
 
 
+#TODO
+
+## ULP rework
+
+- assembly notes
+  - after finishing soldering, need to install pcb into left/right hand frames before keycaps
+  - slide in side by thumb hinge first, so the switches can go above the hinge at an angle
+  
+- need to find way to attach pcb to the frames
+  - screws through pcb, into body and thumbcluster?
+  - screws at the edge of the pcb, to hold it in like holding in the usbc port?
