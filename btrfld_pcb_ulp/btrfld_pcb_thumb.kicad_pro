@@ -263,7 +263,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "btrfld_pcb_thumb.step",
       "svg": "",
       "vrml": ""
     },
