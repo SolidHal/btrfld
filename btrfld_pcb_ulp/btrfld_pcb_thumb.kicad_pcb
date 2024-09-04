@@ -1533,7 +1533,7 @@
 			(size 1.2 1.2)
 			(drill 1.2)
 			(layers "F&B.Cu" "*.Mask")
-			(uuid "4e99a0ad-4e2c-4b37-b823-6f973c57e1a8")
+			(uuid "5611ec01-ef08-4ba1-a11b-b18a9735f321")
 		)
 		(pad "1" smd rect
 			(at -0.65 2.3)
