@@ -1943,7 +1943,7 @@
 		(property "Reference" ""
 			(at 0 0 0)
 			(layer "F.SilkS")
-			(uuid "b8cebbe2-105f-4ba7-93bd-1389bfdd414a")
+			(uuid "1ca90b72-afa5-49b9-9f5e-cb134c0e2bb7")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1954,7 +1954,7 @@
 		(property "Value" ""
 			(at 0 0 0)
 			(layer "F.Fab")
-			(uuid "eed3a05a-e185-42cf-a75b-7bc51f68b3e8")
+			(uuid "38fb4124-1f4b-444a-a122-50fe94a35570")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2003,7 +2003,7 @@
 			(size 1.9 1.9)
 			(drill 1.9)
 			(layers "F&B.Cu" "*.Mask")
-			(uuid "c26d4b90-c876-4c32-a4aa-55467cf6951c")
+			(uuid "d560e3df-2a04-4f08-88dd-e4227236bc70")
 		)
 	)
 	(footprint "SW_KEYBOARD:flipped_smd_diode"
@@ -2649,7 +2649,7 @@
 			(size 1.2 1.2)
 			(drill 1.2)
 			(layers "F&B.Cu" "*.Mask")
-			(uuid "c26d4b90-c876-4c32-a4aa-55467cf6951c")
+			(uuid "ccae6d2d-d4a7-4c8d-ab27-00536c41a677")
 		)
 		(pad "" np_thru_hole circle
 			(at 5.8 1.2)
@@ -4334,7 +4334,7 @@
 		(property "Reference" ""
 			(at 0 0 0)
 			(layer "F.SilkS")
-			(uuid "b8cebbe2-105f-4ba7-93bd-1389bfdd414a")
+			(uuid "abf45355-fe57-4f60-a964-5b60de07b520")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4345,7 +4345,7 @@
 		(property "Value" ""
 			(at 0 0 0)
 			(layer "F.Fab")
-			(uuid "eed3a05a-e185-42cf-a75b-7bc51f68b3e8")
+			(uuid "0be30ca6-8f90-4d45-9731-015d277a59ca")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4394,7 +4394,7 @@
 			(size 1.9 1.9)
 			(drill 1.9)
 			(layers "F&B.Cu" "*.Mask")
-			(uuid "c26d4b90-c876-4c32-a4aa-55467cf6951c")
+			(uuid "be1df929-3527-4c73-9dde-e40e0fdaca5d")
 		)
 	)
 	(footprint ""
@@ -4405,7 +4405,7 @@
 		(property "Reference" ""
 			(at 0 0 0)
 			(layer "F.SilkS")
-			(uuid "b8cebbe2-105f-4ba7-93bd-1389bfdd414a")
+			(uuid "22a43f7d-de3c-415c-96f1-c62a44c664dc")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4416,7 +4416,7 @@
 		(property "Value" ""
 			(at 0 0 0)
 			(layer "F.Fab")
-			(uuid "eed3a05a-e185-42cf-a75b-7bc51f68b3e8")
+			(uuid "930a0666-203f-4a62-a150-be344474285b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4465,7 +4465,7 @@
 			(size 1.9 1.9)
 			(drill 1.9)
 			(layers "F&B.Cu" "*.Mask")
-			(uuid "c26d4b90-c876-4c32-a4aa-55467cf6951c")
+			(uuid "8889a00c-5674-4aea-86cf-462859c7856d")
 		)
 	)
 	(footprint "SW_KEYBOARD:flipped_smd_diode"
@@ -5953,7 +5953,7 @@
 		(property "Reference" ""
 			(at 0 0 0)
 			(layer "F.SilkS")
-			(uuid "b8cebbe2-105f-4ba7-93bd-1389bfdd414a")
+			(uuid "af445b5a-2f8b-4323-896b-0e1db30ae99c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5964,7 +5964,7 @@
 		(property "Value" ""
 			(at 0 0 0)
 			(layer "F.Fab")
-			(uuid "eed3a05a-e185-42cf-a75b-7bc51f68b3e8")
+			(uuid "35fb4545-f1e3-4b18-9528-701b0b59acd1")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6013,7 +6013,7 @@
 			(size 1.9 1.9)
 			(drill 1.9)
 			(layers "F&B.Cu" "*.Mask")
-			(uuid "c26d4b90-c876-4c32-a4aa-55467cf6951c")
+			(uuid "62143467-50c6-4918-8bcf-fff1e6a6b721")
 		)
 	)
 	(footprint "SW_KEYBOARD:flipped_smd_diode"
@@ -8846,7 +8846,7 @@
 		(property "Reference" ""
 			(at 0 0 0)
 			(layer "F.SilkS")
-			(uuid "b8cebbe2-105f-4ba7-93bd-1389bfdd414a")
+			(uuid "44f17471-ac2f-48c5-ad4c-0caae816b14b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8857,7 +8857,7 @@
 		(property "Value" ""
 			(at 0 0 0)
 			(layer "F.Fab")
-			(uuid "eed3a05a-e185-42cf-a75b-7bc51f68b3e8")
+			(uuid "0cd9132f-ce36-41a8-9e4e-54166f8c0962")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8906,7 +8906,7 @@
 			(size 1.9 1.9)
 			(drill 1.9)
 			(layers "F&B.Cu" "*.Mask")
-			(uuid "c26d4b90-c876-4c32-a4aa-55467cf6951c")
+			(uuid "f5bd79fc-87ec-42a9-941d-93c35a099886")
 		)
 	)
 	(footprint "SW_KEYBOARD:flipped_smd_diode"
@@ -9473,7 +9473,7 @@
 		(property "Reference" ""
 			(at 0 0 0)
 			(layer "B.SilkS")
-			(uuid "b8cebbe2-105f-4ba7-93bd-1389bfdd414a")
+			(uuid "6ee43fdb-91f6-46f9-b183-a901dd49e40f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9485,7 +9485,7 @@
 		(property "Value" ""
 			(at 0 0 0)
 			(layer "B.Fab")
-			(uuid "eed3a05a-e185-42cf-a75b-7bc51f68b3e8")
+			(uuid "2b0b33f7-a331-4c46-8fa0-749cd99ea32a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9538,7 +9538,7 @@
 			(size 1.9 1.9)
 			(drill 1.9)
 			(layers "F&B.Cu" "*.Mask")
-			(uuid "c26d4b90-c876-4c32-a4aa-55467cf6951c")
+			(uuid "77ffca5c-8eeb-4580-aca3-c22947442f20")
 		)
 	)
 	(gr_line
