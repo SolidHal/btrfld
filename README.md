@@ -24,7 +24,7 @@ the btrfld ultra low profile (ulp) from above, folded
 the handwired and pcb version of the choc btrfld, folded up
 
 ![thickness_comparison](FinishedPictures/ulp_thickness_comparison.jpeg)
-the btrfld ultra low profile (ulp) next to the btrfld pcb aka choc
+the btrfld ultra low profile (ulp) next to the btrfld pcb aka choc (its 7mm thinner!)
 
 ![siblings](FinishedPictures/btrfld_with_btrfly/pcb_handwired_btrfly_front.jpg)
 the handwired and pcb version of the choc btrfld with its sibling, the btrfly
