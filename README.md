@@ -1,18 +1,35 @@
-# Btrfld
+# btrfld and btrfld_ulp
 
 Pronounced "butter-fold"
 
 A foldable, portable sibling of the btrfly keyboard https://github.com/SolidHal/btrfly-keyboard
 
-More images available in "FinishedPictures" folder
+and a variant, the btrfld ulp (ultra low profile)
 
+More images available in "FinishedPictures" folder
 ![render_gif](demos/pcb_folding.gif)
+the btrfld folding and unfolding
+
+
+![ulp_above](FinishedPictures/ulp_top.jpeg)
+the btrfld ultra low profile (ulp) from above
 
 ![assembled](FinishedPictures/pcb_handwired_top.jpg)
+the handwired and pcb version of the choc btrfld
+
+![ulp_folded](FinishedPictures/ulp_top_folded.jpeg)
+the btrfld ultra low profile (ulp) from above, folded
 
 ![folded](FinishedPictures/pcb_handwired_folded_top.jpg)
+the handwired and pcb version of the choc btrfld, folded up
+
+![thickness_comparison](FinishedPictures/ulp_thickness_comparison.jpeg)
+the btrfld ultra low profile (ulp) next to the btrfld pcb aka choc
 
 ![siblings](FinishedPictures/btrfld_with_btrfly/pcb_handwired_btrfly_front.jpg)
+the handwired and pcb version of the choc btrfld with its sibling, the btrfly
+
+
 
 ## Features
 - 5 key dactyl-manuform-mini thumb cluster
@@ -20,6 +37,17 @@ More images available in "FinishedPictures" folder
 - 6 extra mappable keys
 - bluetooth (optional)
 - folds flat for portability
+
+- btrfld
+  - choc switches
+  - ~22.5 mm thick
+  
+- btrfld ulp
+  - cherry mx ulp switches
+  - ~15.5 mm thick
+
+- 15.5mm thick (btrfld ulp)
+- 22.5mm thick (btrfld)
 
 ## PCBs
 
@@ -45,7 +73,10 @@ More images available in "FinishedPictures" folder
 - A USB 2.0 USB C cable to cut up
   - USB C to Micro usb can be gotten pretty cheap
 
-- 46 choc v1 keyswitches, keycaps
+- 46 choc v1 keyswitches, keycaps OR 46 Cherry MX ULP switches
+  - https://github.com/pashutk/Cherry_MX_ULP has information on finding ulp switches
+  - if you choose to use ULP switches, you will need to order the solder paste stencils as well as the pcbs and get a hotplate so you can solder them
+  - There aren't amazing sources of ULP key caps at this point. The best option i found was to print some. The stls can be found in `ulp_keycap` and `ulp_keycap_homenub` directories. You need a reasonably high resolution SLA printer to get functional keycaps, FDM won't work. 
 
 - 1N4148W SOD-323F diodes
   - Tips for soldering these can be found in the assembly notes section below
@@ -60,7 +91,7 @@ More images available in "FinishedPictures" folder
   - 2 x 9 wire cables: 13 cm
   - 2 x 6 wire cables: 9.6 cm
 
-- 1x bluemicro840
+- 1x nicenano OR bluemicro840
   - if you don't want bluetooth, you can just use a promicro instead
 
 - 3d printed pieces, located in the STLs folder
@@ -77,11 +108,19 @@ PLA/PETG
 
 ## Assembly Tips
 this process is much less tedious than hand wiring. But its still annoying in places since we are trying to keep things thin.
-- solder the parallel wires to the hands/thumb clusters *before* placing the boards in the frame and soldering switches
+
+- btrfld (non-ulp)
+    - solder the parallel wires to the hands/thumb clusters *before* placing the boards in the frame and soldering switches
+    - trim the stabs on the hinge side keys of the left/right hand bodies (switches for Q,A,Z, P, ;, / keys)
+
+- btrfld ulp
+    - use your hotplate to solder the switches first, then the diodes, then the parallel wires. you can then install the pcbs into the 3d printed frames
+    - you might need to use something to support balance some switches while solder, since some are only partially supported by the PCB
+    - the tolerance between the keycaps and the frames is quite tight. do some testing (and likely sanding) before fully assembling to ensure nothing sticks
+    
 - stripping ribbon cable:
   - take an xacto knife ~3mm from the end of the cable and cut a slit until you see wire, then use your fingernail to peel the cut off section away from the rest of the cable
 - use cut off diode/resistor legs to connect the controller to the center pcb
-- trim the stabs on the hinge side keys of the left/right hand bodies (switches for Q,A,Z, P, ;, / keys)
 - the pcbs are designed to hold the diodes "upside down" to keep things as thin as possible. Soldering these is a little hard since they like to stick to the soldering iron.
   - get some fine point electronics tweezers
   - put a very very small amount of solder on one of the diode pads
@@ -193,15 +232,6 @@ Friction fit redesign notes:
 https://markforged.com/resources/blog/joinery-onyx
 https://www.hubs.com/knowledge-base/how-design-snap-fit-joints-3d-printing/
 
+Cherry MX ULP references:
+https://github.com/pashutk/Cherry_MX_ULP
 
-#TODO
-
-## ULP rework
-
-- assembly notes
-  - after finishing soldering, need to install pcb into left/right hand frames before keycaps
-  - slide in side by thumb hinge first, so the switches can go above the hinge at an angle
-  
-- need to find way to attach pcb to the frames
-  - screws through pcb, into body and thumbcluster?
-  - screws at the edge of the pcb, to hold it in like holding in the usbc port?
